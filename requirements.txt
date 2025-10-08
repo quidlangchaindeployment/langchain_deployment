@@ -1,0 +1,10 @@
+streamlit
+pandas
+openpyxl
+langchain
+langchain-openai
+langchain-anthropic
+openai
+anthropic
+matplotlib
+seaborn
