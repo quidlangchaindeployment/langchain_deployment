@@ -1,10 +1,23 @@
-streamlit
-pandas
-openpyxl
-langchain
-langchain-openai
-langchain-anthropic
-openai
-anthropic
-matplotlib
-seaborn
+# LangChain + Gemini 統合のための検証済み依存関係マニフェスト
+# この設定は v1beta/ValidationError デッドロックを解決します。
+streamlit==1.36.0
+pandas==2.2.2
+openpyxl==3.1.5
+matplotlib==3.9.1
+
+# Core LangChain Framework
+langchain==0.2.11
+langchain-core==0.2.23
+
+# モダンなSDKを使用したGoogle統合
+# NOTE: 新しい google-genai SDK の使用を確実にするため 1.0.5 から 2.x バージョンにアップグレード
+langchain-google-genai==2.1.5
+
+# 実験的コンポーネント
+langchain-experimental==0.0.62
+
+# モダンなGoogle SDKとその依存関係
+# NOTE: google-genai を明示的に含め、レガシーな google-generativeai を削除
+google-genai>=1.7.0
+google-api-core>=2.19.0
+googleapis-common-protos>=1.63.2
